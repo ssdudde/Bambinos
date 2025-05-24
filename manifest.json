@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Bambinos",
+  "version": "1.0",
+  
+   "icons": {
+  "16": "icon.png",
+  "48": "icon.png",
+  "128": "icon.png"
+},
+
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://oauth2.googleapis.com/token","https://gmail.googleapis.com/gmail/v1/users/me/messages"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "Front.html",
+    "default_title": "Email Spoofer",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "64": "icon.png"
+  }
+
+}
+}
